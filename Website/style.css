@@ -1,6 +1,3 @@
-html {
-    height: 100%;
-}
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -16,13 +13,14 @@ body {
     color: white;
     background-color: black;
     margin: 0;
+    width: 100%;
 }
 
 #main-container {
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 650px;
+    height: 92.5vh;
     width: 100%;
 }
 
@@ -93,7 +91,7 @@ a {
 } */
 
 #testimonials-container {
-    display: flex;
+    display: none;
     justify-content: center;
     flex-basis: 0;
 }
