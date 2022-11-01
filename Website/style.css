@@ -1,0 +1,145 @@
+html {
+    height: 100%;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin: 0;
+}
+
+#main-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 650px;
+    width: 100%;
+}
+
+h1 {
+    background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
+    padding: 10px 0px 10px 0px;
+    margin: 0 0 20px 0;
+    color: white;
+}
+
+#brand-statement {
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+#brand-statement-container {
+    margin: 40px 0 40px 0;
+}
+
+#contact-link {
+color: white;
+text-decoration: none;
+border: white 1px solid;
+padding: 10px;
+border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#contact-container {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact-container:hover {
+    color:aqua;
+    cursor: pointer;
+}
+
+#contact-link:hover {
+    color:aqua;
+    cursor: pointer;
+    border-color: aqua;
+}
+
+#testimonials-header {
+    display: inline-block;
+    margin-bottom: 0;
+}
+#testimonial-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#testimonial-button:hover {
+    color:aqua;
+    cursor: pointer;
+}
+
+/* #testimonials-arrow:hover {
+    color:aqua;
+    cursor: pointer;
+} */
+
+#testimonials-container {
+    display: flex;
+    justify-content: center;
+    flex-basis: 0;
+}
+
+.testimonials {
+    background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
+    margin: 0px 10px 0px 10px;
+    padding: 15px;
+    width: 25%;
+    color: white;
+}
+
+
+h5 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bottom-links {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    color: white;
+    background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
+}
+
+nav {
+    margin-top: 40px;
+}
+
+.navlinks {
+    line-height: 50px;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    #testimonials-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+  }
