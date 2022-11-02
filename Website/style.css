@@ -31,8 +31,9 @@ body {
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 85%;
+    height: 87%;
     width: 100%;
+    min-height: 500px;
     overflow: scroll;
     margin: 0;
 }
@@ -73,10 +74,10 @@ a {
     justify-content: center;
 }
 
-#contact-container:hover {
+/* #contact-container:hover {
     color:aqua;
     cursor: pointer;
-}
+} */
 
 #contact-link:hover {
     color:aqua;
@@ -108,10 +109,11 @@ a {
     display: none;
     justify-content: center;
     flex-basis: 0;
+    margin-bottom: 2%;
 }
 
 .testimonials {
-    background-image: linear-gradient(rgb(31, 15, 175), rgb(22, 22, 118));
+    background-image: linear-gradient(hwb(246 6% 31% / 0), rgb(22, 22, 118));
     margin: 0px 1% 0px 1%;
     padding: 15px;
     width: 25%;
@@ -128,10 +130,11 @@ h5 {
 
 .bottom-links {
     padding: 0;
-    margin: 1% 0 0 0;
+    margin: 2px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
+    flex-wrap: wrap;
     color: white;
     background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
 }
@@ -149,6 +152,10 @@ nav {
 
 #skeletor {
     width: 300px;
+}
+
+#aboutme {
+    min-height: 420px;
 }
 
 .page-content {
@@ -193,12 +200,15 @@ nav2 {
     #brand-statement {
         padding-top: 0;
         margin-top: 0;
-
     }
 
     
     .main-container {
         justify-content: space-between;
+    }
+
+    #testimonial-button {
+        margin-bottom: 10px;
     }
 
     #testimonials-container {
@@ -208,7 +218,7 @@ nav2 {
 
     .testimonials {
         width: 80%;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .page-content{
