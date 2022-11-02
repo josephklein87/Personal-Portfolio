@@ -1,6 +1,12 @@
 html {
-    height: 100vh;
+    height: 100%;
+    margin: 0;
 }
+
+main {
+    height: 100%;
+}
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -17,31 +23,35 @@ body {
     background-color: black;
     margin: 0;
     width: 100%;
-    height: 91vh;
+    height: 100%;
+    padding: 0%;
 }
 
 .main-container {
     display:flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 91vh;
+    height: 85%;
     width: 100%;
+    overflow: scroll;
+    margin: 0;
 }
 
 h1 {
     background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
     padding: 15px 0px 15px 0px;
-    margin: 0 0 20px 0;
+    margin: 0 0 0 0;
     color: white;
+    align-self: flex-start;
 }
 
 #brand-statement {
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 5px;
 }
 
 #brand-statement-container {
-    margin: 40px 0 40px 0;
+    margin: 5% 10px 5% 10px;
 }
 
 #contact-link {
@@ -58,7 +68,7 @@ a {
 
 #contact-container {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 5%;
     align-items: center;
     justify-content: center;
 }
@@ -102,7 +112,7 @@ a {
 
 .testimonials {
     background-image: linear-gradient(rgb(31, 15, 175), rgb(22, 22, 118));
-    margin: 0px 10px 0px 10px;
+    margin: 0px 1% 0px 1%;
     padding: 15px;
     width: 25%;
     color: white;
@@ -118,6 +128,7 @@ h5 {
 
 .bottom-links {
     padding: 0;
+    margin: 1% 0 0 0;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -126,7 +137,7 @@ h5 {
 }
 
 nav {
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 .navlinks {
@@ -137,8 +148,7 @@ nav {
 /* ABOUT ME PAGE STYLING */
 
 #skeletor {
-    width: 25%;
-    ;
+    width: 300px;
 }
 
 .page-content {
@@ -164,7 +174,33 @@ p {
 nav2 {
     margin: 0;
 }
+
 @media (max-width: 600px) {
+
+
+    #aboutme {
+        justify-content: center;
+    }
+
+    html, body, .main-container {
+        width: 100%;
+    }
+
+    h1 {
+        margin-bottom: 0;
+    }
+
+    #brand-statement {
+        padding-top: 0;
+        margin-top: 0;
+
+    }
+
+    
+    .main-container {
+        justify-content: space-between;
+    }
+
     #testimonials-container {
         flex-direction: column;
         align-items: center;
@@ -173,5 +209,22 @@ nav2 {
     .testimonials {
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .page-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #skeletor {
+        width: 50%;
+        /* margin-top: 20px; */
+    }
+
+    #my-story {
+        width: 80%;
+    }
+    .navlinks {
+        font-size: smaller;
     }
   }
