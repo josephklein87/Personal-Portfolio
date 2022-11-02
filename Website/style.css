@@ -1,77 +1,72 @@
 html {
-    height: 100%;
-    margin: 0;
+  height: 100%;
+  margin: 0;
 }
 
 main {
-    height: 100%;
+  height: 100%;
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
-
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    text-align: center;
-    color: white;
-    background-color: black;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    padding: 0%;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  color: white;
+  background-color: black;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0%;
 }
 
 .main-container {
-    display:flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 87%;
-    width: 100%;
-    min-height: 500px;
-    overflow: scroll;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 87%;
+  width: 100%;
+  min-height: 500px;
+  overflow: scroll;
+  margin: 0;
 }
 
 h1 {
-    background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
-    padding: 15px 0px 15px 0px;
-    margin: 0 0 0 0;
-    color: white;
-    align-self: flex-start;
+  background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
+  padding: 15px 0px 15px 0px;
+  margin: 0 0 0 0;
+  color: white;
+  align-self: flex-start;
 }
 
 #brand-statement {
-    margin-top: 0;
-    margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 5px;
 }
 
 #brand-statement-container {
-    margin: 5% 10px 5% 10px;
+  margin: 0 10px 0 10px;
 }
 
 #contact-link {
-color: white;
-text-decoration: none;
-border: white 1px solid;
-padding: 10px;
-border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  border: white 1px solid;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #contact-container {
-    display: flex;
-    margin-bottom: 5%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  margin-bottom: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 /* #contact-container:hover {
@@ -80,24 +75,24 @@ a {
 } */
 
 #contact-link:hover {
-    color:aqua;
-    cursor: pointer;
-    border-color: aqua;
+  color: aqua;
+  cursor: pointer;
+  border-color: aqua;
 }
 
 #testimonials-header {
-    display: inline-block;
-    margin-bottom: 0;
+  display: inline-block;
+  margin-bottom: 0;
 }
 #testimonial-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #testimonial-button:hover {
-    color:aqua;
-    cursor: pointer;
+  color: aqua;
+  cursor: pointer;
 }
 
 /* #testimonials-arrow:hover {
@@ -106,135 +101,183 @@ a {
 } */
 
 #testimonials-container {
-    display: none;
-    justify-content: center;
-    flex-basis: 0;
-    margin-bottom: 2%;
+  display: none;
+  justify-content: center;
+  flex-basis: 0;
+  margin-bottom: 2%;
 }
 
 .testimonials {
-    background-image: linear-gradient(hwb(246 6% 31% / 0), rgb(22, 22, 118));
-    margin: 0px 1% 0px 1%;
-    padding: 15px;
-    width: 25%;
-    color: white;
-    border-radius: 20px;
+  background-image: linear-gradient(hwb(246 6% 31% / 0), rgb(22, 22, 118));
+  margin: 0px 1% 0px 1%;
+  padding: 15px;
+  width: 25%;
+  color: white;
+  border-radius: 20px;
 }
 
-
 h5 {
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 0;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .bottom-links {
-    padding: 0;
-    margin: 2px;
-    display: flex;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-wrap: wrap;
-    color: white;
-    background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
+  padding: 0;
+  margin: 2px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  color: white;
+  background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
 }
 
 nav {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .navlinks {
-    line-height: 50px;
-    color: white;
+  line-height: 50px;
+  color: white;
 }
 
 /* ABOUT ME PAGE STYLING */
 
 #skeletor {
-    width: 300px;
+  width: 300px;
 }
 
 #aboutme {
-    min-height: 420px;
+  min-height: 600px;
 }
 
 .page-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 p {
-    text-align: center;
-    margin-bottom: 2%;
+  text-align: center;
+  margin-bottom: 2%;
 }
 
 #my-story {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav2 {
-    margin: 0;
+  margin: 0;
+}
+
+/* PROJECT PAGE STYLING */
+#carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-images {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  width: 50%;
+  margin: 2%;
+}
+
+.carousel-pic {
+  width: 90%;
+  border: white 4px solid;
+}
+
+.carousel-button-previous:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.carousel-button-next:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.carousel-images img {
+  display: none;
+}
+
+.carousel-images .carousel-pic:first-of-type {
+  display: block;
+}
+
+#video-thumbs img {
+  width: 10%;
+  margin: 10px 0 10px 0;
+}
+
+#video-thumbs img:hover {
+  box-shadow: 0px 0px 10px white;
+  width: 11%;
 }
 
 @media (max-width: 600px) {
-
-
-    #aboutme {
-        justify-content: center;
-    }
-
-    html, body, .main-container {
-        width: 100%;
-    }
-
-    h1 {
-        margin-bottom: 0;
-    }
-
-    #brand-statement {
-        padding-top: 0;
-        margin-top: 0;
-    }
-
-    
-    .main-container {
-        justify-content: space-between;
-    }
-
-    #testimonial-button {
-        margin-bottom: 10px;
-    }
-
-    #testimonials-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .testimonials {
-        width: 80%;
-        margin-bottom: 10px;
-    }
-
-    .page-content{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #skeletor {
-        width: 50%;
-        /* margin-top: 20px; */
-    }
-
-    #my-story {
-        width: 80%;
-    }
-    .navlinks {
-        font-size: smaller;
-    }
+  #aboutme {
+    justify-content: center;
+    min-height: 550px;
+    height: 84%;
   }
+
+  html,
+  body,
+  .main-container {
+    width: 100%;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  #brand-statement {
+    padding-top: 0;
+    margin-top: 20px;
+  }
+
+  .main-container {
+    justify-content: space-between;
+  }
+
+  #testimonial-button {
+    margin-bottom: 10px;
+  }
+
+  #testimonials-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+
+  .page-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #skeletor {
+    width: 160px;
+    /* margin-top: 20px; */
+  }
+
+  #my-story {
+    width: 80%;
+    font-size: medium;
+  }
+  .navlinks {
+    font-size: smaller;
+  }
+}
