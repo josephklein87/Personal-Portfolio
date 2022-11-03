@@ -90,12 +90,10 @@ a {
 
 /* #contact-container:hover {
     color:aqua;
-    cursor: pointer;
 } */
 
 #contact-link:hover {
   color: aqua;
-  cursor: pointer;
   border-color: aqua;
 }
 
@@ -111,12 +109,10 @@ a {
 
 #testimonial-button:hover {
   color: aqua;
-  cursor: pointer;
 }
 
 /* #testimonials-arrow:hover {
     color:aqua;
-    cursor: pointer;
 } */
 
 #testimonials-container {
@@ -244,12 +240,10 @@ p {
 
 .carousel-button-previous:hover {
   color: aqua;
-  cursor: pointer;
 }
 
 .carousel-button-next:hover {
   color: aqua;
-  cursor: pointer;
 }
 
 .carousel-images img {
@@ -271,8 +265,7 @@ p {
 }
 
 a:hover {
-  color: aqua;
-  cursor: pointer;
+  color: red;
 }
 
 /* MODAL STYLING */
@@ -347,7 +340,6 @@ p {
 
 #watch-here:hover {
   color: aqua;
-  cursor: pointer;
 }
 
 iframe {
@@ -443,12 +435,11 @@ iframe {
   }
 
   .bottom-menu:hover {
-    color: aqua;
+    color: red;
   }
 
   a:hover {
-    color: aqua;
-    cursor: pointer;
+    color: red;
   }
 
   .menu-modal {
