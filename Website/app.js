@@ -75,6 +75,10 @@ $(() => {
       $("#covert-modal").css("display", "block");
     } else if (e.target.id === "v-force") {
       $("#v-force-modal").css("display", "block");
+    } else if (e.target.id === "wedlock") {
+    $("#wedlock-modal").css("display", "block");
+    } else if (e.target.id === "code1") {
+        $("#code1-modal").css("display", "block");  
     }
   };
 
@@ -82,10 +86,16 @@ $(() => {
     $(".modal").css("display", "none");
     //HAD ISSUES WITH THE VIDEO STILL PLAYING AFTER THE DIV WAS CLOSED, THIS IS THE SOLUTION I FOUND
     if (e.target.id === "v-force-close") {
-      $("iframe").attr("src", "#");
+      $("#v-force-video").attr("src", "#");
       $("#v-force-video").attr(
         "src",
         "https://www.youtube.com/embed/8oaKh9GEPCs"
+      );
+    } else if (e.target.id === "wedlock-close") {
+        $("#wedlock-video").attr("src", "#");
+      $("#wedlock-video").attr(
+        "src",
+        "https://www.youtube.com/embed/q75nJRGXO3U"
       );
     }
   };
@@ -100,4 +110,6 @@ $(() => {
   $("#covert").on("click", openModal);
   $(".close").on("click", closeModal);
   $("#v-force").on("click", openModal);
+  $("#wedlock").on("click", openModal);
+  $("#code1").on("click", openModal);
 });

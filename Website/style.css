@@ -278,10 +278,23 @@ a:hover {
   left: 0;
   height: 110%;
   width: 100%;
-  z-index: 1;
+  z-index: 4;
   overflow: auto;
   /* min-height: 650px;
   max-height: 800px; */
+}
+
+#wedlock-text {
+    min-height: 500px;
+    max-height: 600px;
+}
+
+#code1-modal-text {
+  background-image: url("https://i.pinimg.com/originals/da/96/22/da96228c593d53a3f932c339f5c28b21.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  min-height: 200px;
 }
 
 #covert1080 {
@@ -314,7 +327,7 @@ p {
 }
 
 #v-force-text {
-  max-height: 500px;
+  max-height: 600px;
 }
 
 .modal-textbox {
@@ -363,7 +376,7 @@ iframe {
 
   .modal-textbox,
   #covert-modal-text,
-  #v-force-text {
+  #v-force-text, #wedlock-text {
     max-height: 400px;
     min-height: 400px;
   }
