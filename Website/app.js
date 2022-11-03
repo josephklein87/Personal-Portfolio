@@ -1,11 +1,10 @@
 $(() => {
   // HOME PAGE VARIABLES AND LOAD CONDITIONS
   let testimonialVisible = false;
-
+  $(".menu-modal").hide();
   $("#testimonials-container").css("display", "flex");
   $("#slide-div").hide();
   $("#expand-more1").hide();
-  $(".menu-modal").hide();
 
   //SLIDE FUNCTION TO REVEAL MENU
   let menuStatus = false;
