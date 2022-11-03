@@ -26,19 +26,30 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 87%;
+  height: 86%;
   width: 100%;
   min-height: 500px;
   overflow: scroll;
   margin: 0;
+  padding-bottom: 50px;
+  padding-top: 60px;
 }
 
 h1 {
-  background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
-  padding: 15px 0px 15px 0px;
+  /* background-image: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgb(22, 22, 118),
+    rgba(0, 0, 0, 0)
+  ); */
+  /* padding: 15px 0px 15px 0px; */
   margin: 0 0 0 0;
   color: white;
-  align-self: flex-start;
+  line-height: 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  font-family: "Raleway", sans-serif;
 }
 
 #brand-statement {
@@ -124,17 +135,24 @@ h5 {
 
 .bottom-links {
   padding: 0;
-  margin: 2px;
+  margin: 0;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
   flex-wrap: wrap;
   color: white;
-  background-image: linear-gradient(rgba(31, 15, 175, 0.273), rgb(22, 22, 118));
+  background-color: black;
+  /* background-image: linear-gradient(
+    rgba(0, 0, 0, 0.273),
+    rgb(22, 22, 118),
+  ); */
 }
 
 nav {
+  position: fixed;
   margin-top: 0px;
+  bottom: 0;
+  width: 100%;
 }
 
 .navlinks {
@@ -183,11 +201,18 @@ p {
   align-items: center;
 }
 
-nav2 {
-  margin: 0;
+/* PROJECT PAGE STYLING */
+
+.project-header {
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
-/* PROJECT PAGE STYLING */
+#projects-content {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 #carousel-container {
   display: flex;
   justify-content: center;
@@ -200,11 +225,13 @@ nav2 {
   padding: 0;
   width: 50%;
   margin: 2%;
+  min-width: 250px;
 }
 
 .carousel-pic {
   width: 90%;
   border: white 4px solid;
+  min-width: 200px;
 }
 
 .carousel-button-previous:hover {
@@ -228,6 +255,7 @@ nav2 {
 #video-thumbs img {
   width: 10%;
   margin: 10px 0 10px 0;
+  min-width: 100px;
 }
 
 #video-thumbs img:hover {
@@ -235,7 +263,106 @@ nav2 {
   width: 11%;
 }
 
+/* MODAL STYLING */
+
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 110%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+  /* min-height: 650px;
+  max-height: 800px; */
+}
+
+#covert1080 {
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+.modal a,
+p {
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.close {
+  color: white;
+  text-align: left;
+  display: inline-block;
+  padding: 0;
+  margin-right: 100%;
+}
+
+#covert-modal-text {
+  height: 50%;
+  min-height: 500px;
+  max-height: 500px;
+}
+
+#v-force-text {
+  max-height: 500px;
+}
+
+.modal-textbox {
+  background-color: rgb(48, 48, 48);
+  height: 70%;
+  width: 100%;
+  min-height: 550px;
+  border-radius: 2px;
+  margin-top: 100px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+
+.modal h3 {
+  margin-top: 0;
+}
+
+#watch-here {
+  line-height: 60px;
+  color: white;
+  text-decoration: underline;
+}
+
+#watch-here:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+iframe {
+  width: 680px;
+  height: 400px;
+}
+
+.close:hover {
+  color: red;
+}
+
 @media (max-width: 600px) {
+  #covert1080 {
+    width: 300px;
+  }
+
+  iframe {
+    width: 360px;
+    height: 200px;
+  }
+
+  .modal-textbox,
+  #covert-modal-text, #v-force-text {
+    max-height: 400px;
+    min-height: 400px;
+  }
+
   #aboutme {
     justify-content: center;
     min-height: 550px;
@@ -259,6 +386,7 @@ nav2 {
 
   .main-container {
     justify-content: space-between;
+    height: 80%;
   }
 
   #testimonial-button {

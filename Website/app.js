@@ -59,8 +59,36 @@ $(() => {
       .css("display", "block");
   };
 
-  //
+  //PROJECTS PAGE MODALS CODE
+
+  const openModal = (e) => {
+    if (e.target.id === "covert") {
+      $("#covert-modal").css("display", "block");
+    } else if (e.target.id === "v-force") {
+      $("#v-force-modal").css("display", "block");
+    }
+  };
+
+  const closeModal = (e) => {
+    $(".modal").css("display", "none");
+    //HAD ISSUES WITH THE VIDEO STILL PLAYING AFTER THE DIV WAS CLOSED, THIS IS THE SOLUTION I FOUND
+    if (e.target.id === "v-force-close") {
+      $("iframe").attr("src", "#");
+      $("#v-force-video").attr(
+        "src",
+        "https://www.youtube.com/embed/8oaKh9GEPCs"
+      );
+    }
+  };
+
+  //PROJECTS PAGE CAROUSEL BUTTONS
 
   $(".carousel-button-next").on("click", nextButton);
   $(".carousel-button-previous").on("click", previousButton);
+
+  //MODAL BUTTONS
+
+  $("#covert").on("click", openModal);
+  $(".close").on("click", closeModal);
+  $("#v-force").on("click", openModal);
 });
