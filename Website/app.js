@@ -5,6 +5,16 @@ $(() => {
   $("#testimonials-container").css("display", "flex");
   $("#slide-div").hide();
   $("#expand-more1").hide();
+  $(".menu-modal").hide();
+
+  //SLIDE FUNCTION TO REVEAL MENU
+  let menuStatus = false;
+
+  const menuReveal = () => {
+    $(".menu-modal").slideToggle("slow");
+  };
+
+  $(".bottom-menu").on("click", menuReveal);
 
   //SLIDE FUNCTION TO REVEAL TESTIMONIALS
   const testimonialsReveal = () => {
