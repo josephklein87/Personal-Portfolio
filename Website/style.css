@@ -223,6 +223,11 @@ nav {
   width: 300px;
 }
 
+#he-man {
+  display: none;
+  width: 300px;
+}
+
 #aboutme {
   min-height: 600px;
 }

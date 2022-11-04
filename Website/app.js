@@ -27,6 +27,8 @@ $(() => {
     $(".nightmode").css("color", "black");
     $("#contact-link").css("border-color", "black");
     $(".modal-textbox").css("background-color", "rgb(255, 235, 218)");
+    $("#skeletor").hide();
+    $("#he-man").show();
     window.localStorage.setItem("darkLightMode", "light");
   };
 
@@ -48,6 +50,8 @@ $(() => {
     $("#contact-link").css("border-color", "white");
     $("modal-textbox").css("background-color", "rgb(48, 48, 48)");
     window.localStorage.setItem("darkLightMode", "dark");
+    $("#he-man").hide();
+    $("#skeletor").show();
   };
 
   if (window.localStorage.getItem("darkLightMode") === "light") {
@@ -58,14 +62,14 @@ $(() => {
 
   // SET HTML TO ONLY SHOW AFTER NIGHT MODE SETTING IS LOADED ON THE PAGE OTHERWISE IF DAY MODE IS SELECTED YOU SEE A FLASH OF THE ORIGINAL STYLING
 
-  $("html").show();
-  $(".page-head").fadeIn("slow");
-  $("nav").fadeIn("slow");
-
   $(".light-mode").on("click", lightModeBt);
   $(".dark-mode").on("click", darkModeBt);
 
   // HOME PAGE VARIABLES AND LOAD CONDITIONS
+
+  $("html").show();
+  $(".page-head").fadeIn("slow");
+  $("nav").fadeIn("slow");
 
   $(".hidden").hide().delay(400);
   $(".hidden").fadeIn("slow");
