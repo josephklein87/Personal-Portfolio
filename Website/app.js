@@ -19,12 +19,14 @@ $(() => {
     $(".navlinks").css("color", "black");
     $(".testimonials")
       .css("background-image", "none")
-      .css("background-color", "white").css("border", "1px peachpuff solid");
+      .css("background-color", "white")
+      .css("border", "1px peachpuff solid");
     $("html")
       .css("background-image", 'url("https://i.imgur.com/EbsdWxT.png")')
       .css("background-color", "white");
     $(".nightmode").css("color", "black");
     $("#contact-link").css("border-color", "black");
+    $(".modal-textbox").css("background-color", "rgb(255, 235, 218)");
     window.localStorage.setItem("darkLightMode", "light");
   };
 
@@ -44,6 +46,7 @@ $(() => {
       .css("background-color", "black");
     $(".nightmode").css("color", "white");
     $("#contact-link").css("border-color", "white");
+    $("modal-textbox").css("background-color", "rgb(48, 48, 48)");
     window.localStorage.setItem("darkLightMode", "dark");
   };
 
