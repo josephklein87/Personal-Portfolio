@@ -1,4 +1,6 @@
 $(() => {
+  $(".hidden").hide().delay(200);
+  $(".hidden").fadeIn("slow");
   // HOME PAGE VARIABLES AND LOAD CONDITIONS
   let testimonialVisible = false;
   $(".menu-modal").hide();
@@ -76,9 +78,9 @@ $(() => {
     } else if (e.target.id === "v-force") {
       $("#v-force-modal").css("display", "block");
     } else if (e.target.id === "wedlock") {
-    $("#wedlock-modal").css("display", "block");
+      $("#wedlock-modal").css("display", "block");
     } else if (e.target.id === "code1") {
-        $("#code1-modal").css("display", "block");  
+      $("#code1-modal").css("display", "block");
     }
   };
 
@@ -92,7 +94,7 @@ $(() => {
         "https://www.youtube.com/embed/8oaKh9GEPCs"
       );
     } else if (e.target.id === "wedlock-close") {
-        $("#wedlock-video").attr("src", "#");
+      $("#wedlock-video").attr("src", "#");
       $("#wedlock-video").attr(
         "src",
         "https://www.youtube.com/embed/q75nJRGXO3U"
