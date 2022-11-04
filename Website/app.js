@@ -19,7 +19,7 @@ $(() => {
     $(".navlinks").css("color", "black");
     $(".testimonials")
       .css("background-image", "none")
-      .css("background-color", "white");
+      .css("background-color", "white").css("border", "1px peachpuff solid");
     $("html")
       .css("background-image", 'url("https://i.imgur.com/EbsdWxT.png")')
       .css("background-color", "white");
@@ -34,7 +34,7 @@ $(() => {
     $("h1").css("color", "white").css("background-color", "black");
     $(".bottom-links").css("background-color", "black");
     $(".navlinks").css("color", "white");
-    $(".testimonials").css("background-color", "");
+    $(".testimonials").css("background-color", "").css("border", "");
     $(".testimonials").css(
       "background-image",
       "linear-gradient(hwb(0 0% 100% / 0), rgb(77, 84, 133))"
