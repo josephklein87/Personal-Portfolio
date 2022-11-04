@@ -1,7 +1,10 @@
 html {
   height: 100%;
   margin: 0;
+  background-image: url("https://i.imgur.com/r6JPltq.jpg");
   background-color: black;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .menu-modal {
   display: none;
@@ -24,9 +27,6 @@ body {
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
   color: white;
-  background-image: url("https://i.imgur.com/r6JPltq.jpg");
-  background-size: cover;
-  background-attachment: fixed;
   margin: 0;
   width: 100%;
   height: 100%;
@@ -37,13 +37,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 86%;
+  height: 100%;
   width: 100%;
   min-height: 500px;
   overflow: scroll;
   margin: 0;
   padding-bottom: 50px;
   padding-top: 60px;
+}
+
+.pageholder {
+  height: 86%;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -226,6 +237,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: none;
 }
 
 .carousel-images {
@@ -382,7 +394,7 @@ iframe {
 
 .resume-container {
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 #resume-text {
@@ -390,8 +402,8 @@ iframe {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: left;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   height: 600px;
 }
 
@@ -427,6 +439,11 @@ iframe {
   .resume-company {
     font-size: small;
     margin: 0px 15px 0px 15px;
+  }
+
+  #resume-text {
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .title-time {
