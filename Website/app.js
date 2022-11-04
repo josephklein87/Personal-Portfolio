@@ -1,7 +1,70 @@
 $(() => {
+  //LIGHT MODE CODE
+
+  if (localStorage.getItem(darkMode) === true) {
+    $("h1").css("color", "black").css("background-color", "peachpuff");
+    $(".bottom-links").css("background-color", "peachpuff");
+    $(".navlinks").css("color", "black");
+    $("html").css(
+      "background-image",
+      'url("https://i.imgur.com/Bz64jOS.jpeg")'
+    );
+    $(".nightmode").css("color", "black");
+  } else if (localStorage.getItem(darkMode) === false) {
+    $("h1").css("color", "black").css("background-color", "peachpuff");
+    $(".bottom-links").css("background-color", "peachpuff");
+    $(".navlinks").css("color", "black");
+    $("html").css(
+      "background-image",
+      'url("https://i.imgur.com/Bz64jOS.jpeg")'
+    );
+    $(".nightmode").css("color", "black");
+    locatStorage.setItem("darkMode", false);
+  } else {
+    console.log("No mode selected");
+  }
+
+  const lightModeDarkMode = () => {
+    if (localStorage.getItem(darkMode) === true) {
+      $("h1").css("color", "black").css("background-color", "peachpuff");
+      $(".bottom-links").css("background-color", "peachpuff");
+      $(".navlinks").css("color", "black");
+      $("html").css(
+        "background-image",
+        'url("https://i.imgur.com/Bz64jOS.jpeg")'
+      );
+      $(".nightmode").css("color", "black");
+      locatStorage.setItem("darkMode", false);
+    } else if (localStorage.getItem(darkMode) === false) {
+      $("h1").css("color", "white").css("background-color", "black");
+      $(".bottom-links").css("background-color", "black");
+      $(".navlinks").css("color", "white");
+      $("html").css(
+        "background-image",
+        'url("https://i.imgur.com/r6JPltq.jpg")'
+      );
+      $(".nightmode").css("color", "white");
+      locatStorage.setItem("darkMode", true);
+    } else {
+      $("h1").css("color", "black").css("background-color", "peachpuff");
+      $(".bottom-links").css("background-color", "peachpuff");
+      $(".navlinks").css("color", "black");
+      $("html").css(
+        "background-image",
+        'url("https://i.imgur.com/Bz64jOS.jpeg")'
+      );
+      $(".nightmode").css("color", "black");
+      locatStorage.setItem("darkMode", false);
+    }
+  };
+
+  $(".lightmode").on("click", lightModeDarkMode);
+
+  // HOME PAGE VARIABLES AND LOAD CONDITIONS
+
   $(".hidden").hide().delay(200);
   $(".hidden").fadeIn("slow");
-  // HOME PAGE VARIABLES AND LOAD CONDITIONS
+
   let testimonialVisible = false;
   $(".menu-modal").hide();
   $("#testimonials-container").css("display", "flex");

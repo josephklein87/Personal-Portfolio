@@ -6,6 +6,21 @@ html {
   background-size: cover;
   background-attachment: fixed;
 }
+
+.light-mode {
+  color: white;
+  float: left;
+  z-index: 4;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+.light-mode:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
 .menu-modal {
   display: none;
 }
@@ -69,8 +84,9 @@ h1 {
   line-height: 60px;
   position: fixed;
   top: 0;
-  width: 100%;
+  z-index: 2;
   background-color: black;
+  width: 100%;
   font-family: "Raleway", sans-serif;
 }
 
@@ -486,7 +502,6 @@ iframe {
 
   h1 {
     margin-bottom: 0;
-    z-index: 2;
   }
 
   #brand-statement {
