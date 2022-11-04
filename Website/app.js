@@ -59,13 +59,15 @@ $(() => {
   // SET HTML TO ONLY SHOW AFTER NIGHT MODE SETTING IS LOADED ON THE PAGE OTHERWISE IF DAY MODE IS SELECTED YOU SEE A FLASH OF THE ORIGINAL STYLING
 
   $("html").show();
+  $(".page-head").fadeIn("slow");
+  $("nav").fadeIn("slow");
 
   $(".light-mode").on("click", lightModeBt);
   $(".dark-mode").on("click", darkModeBt);
 
   // HOME PAGE VARIABLES AND LOAD CONDITIONS
 
-  $(".hidden").hide().delay(200);
+  $(".hidden").hide().delay(400);
   $(".hidden").fadeIn("slow");
 
   let testimonialVisible = false;
