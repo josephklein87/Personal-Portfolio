@@ -48,10 +48,10 @@ $(() => {
       .css("background-color", "black");
     $(".nightmode").css("color", "white");
     $("#contact-link").css("border-color", "white");
-    $("modal-textbox").css("background-color", "rgb(48, 48, 48)");
-    window.localStorage.setItem("darkLightMode", "dark");
+    $(".modal-textbox").css("background-color", "rgb(48, 48, 48)");
     $("#he-man").hide();
     $("#skeletor").show();
+    window.localStorage.setItem("darkLightMode", "dark");
   };
 
   if (window.localStorage.getItem("darkLightMode") === "light") {
