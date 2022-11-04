@@ -1,4 +1,5 @@
 html {
+  display: none;
   height: 100%;
   margin: 0;
   background-image: url("https://i.imgur.com/r6JPltq.jpg");
@@ -16,9 +17,23 @@ html {
   left: 15px;
 }
 
+.dark-mode {
+  color: black;
+  float: left;
+  z-index: 4;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+}
+
+.dark-mode:hover {
+  cursor: pointer;
+  color: blue;
+}
+
 .light-mode:hover {
-    color: yellow;
-    cursor: pointer;
+  color: yellow !important;
+  cursor: pointer;
 }
 
 .menu-modal {
@@ -123,8 +138,8 @@ a {
 } */
 
 #contact-link:hover {
-  color: rgb(172, 187, 218);
-  border-color: rgb(172, 187, 218);
+  color: rgb(172, 187, 218) !important;
+  border-color: rgb(172, 187, 218) !important;
   cursor: pointer;
 }
 
@@ -139,7 +154,7 @@ a {
 }
 
 #testimonial-button:hover {
-  color: rgb(172, 187, 218);
+  color: rgb(172, 187, 218) !important;
   cursor: pointer;
 }
 
@@ -271,14 +286,9 @@ p {
   min-width: 200px;
 }
 
-.carousel-button-previous:hover {
-  color: rgb(172, 187, 218);
+.carousel-scroll:hover {
+  color: rgb(172, 187, 218) !important;
   cursor: pointer;
-}
-
-.carousel-button-next:hover {
-  cursor: pointer;
-  color: rgb(172, 187, 218);
 }
 
 .carousel-images img {
@@ -295,13 +305,16 @@ p {
   min-width: 100px;
 }
 
-#video-thumbs img:hover {
-  box-shadow: 0px 0px 10px white;
+#code1:hover,
+#v-force:hover,
+#covert:hover,
+#wedlock:hover {
+  box-shadow: 0px 0px 15px peachpuff !important;
   cursor: pointer;
 }
 
 a:hover {
-  color: red;
+  color: red !important;
 }
 
 /* MODAL STYLING */
@@ -388,7 +401,7 @@ p {
 }
 
 #watch-here:hover {
-  color: rgb(172, 187, 218);
+  color: rgb(172, 187, 218) !important;
   cursor: pointer;
 }
 
@@ -398,12 +411,12 @@ iframe {
 }
 
 .close:hover {
-  color: red;
+  color: red !important;
   cursor: pointer;
 }
 
 .logo:hover {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 /* RESUME PAGE STYLING */
@@ -554,12 +567,12 @@ iframe {
   }
 
   .bottom-menu:hover {
-    color: red;
+    color: red !important;
     cursor: pointer;
   }
 
   a:hover {
-    color: red;
+    color: red !important;
     cursor: pointer;
   }
 

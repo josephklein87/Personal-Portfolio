@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
@@ -41,7 +41,11 @@
   </head>
   <body>
     <header>
-      <h1 class="page-head">PROJECTS</h1>
+      <h1 class="page-head"><span class="material-symbols-outlined light-mode">
+        light_mode </span
+      ><span class="material-symbols-outlined dark-mode">
+        dark_mode
+        </span>PROJECTS</h1>
     </header>
     <div class="pageholder">
       <div class="hidden">
@@ -146,7 +150,7 @@
           <span class="material-symbols-outlined nightmode"> horizontal_rule </span>
           <div id="carousel-container">
             <div class="carousel-button-previous">
-              <span class="material-symbols-outlined nightmode"> west </span>
+              <span class="material-symbols-outlined nightmode carousel-scroll"> west </span>
             </div>
             <div class="carousel-images">
               <img src="https://i.imgur.com/jodiILF.jpg" class="carousel-pic" />
@@ -156,7 +160,7 @@
               <img src="https://i.imgur.com/sUv3vks.jpg" class="carousel-pic" />
             </div>
             <div class="carousel-button-next">
-              <span class="material-symbols-outlined nightmode"> east </span>
+              <span class="material-symbols-outlined nightmode carousel-scroll"> east </span>
             </div>
           </div>
         </div>
@@ -188,7 +192,7 @@
     </div>
     <nav>
       <ul class="bottom-links">
-        <span class="material-symbols-outlined bottom-menu" id="bottom-menu">
+        <span class="material-symbols-outlined bottom-menu nightmode" id="bottom-menu">
           menu
         </span>
         <a class="navlinks" href="index.html">HOME</a>

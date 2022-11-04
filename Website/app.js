@@ -1,64 +1,64 @@
+//ADDED THIS TO SET THE BACKGROUND TO BLACK BEFORE THE JQUERY TO MAKE NIGHTMODE LOAD LOOK NICER
+
+if (window.localStorage.getItem("darkLightMode") === "dark") {
+  const html = document.querySelector("html");
+  html.style.display = "block";
+  html.style.backgroundColor = "black";
+}
+
 $(() => {
   //LIGHT MODE CODE
 
-  if (localStorage.getItem(darkMode) === true) {
-    $("h1").css("color", "black").css("background-color", "peachpuff");
-    $(".bottom-links").css("background-color", "peachpuff");
-    $(".navlinks").css("color", "black");
-    $("html").css(
-      "background-image",
-      'url("https://i.imgur.com/Bz64jOS.jpeg")'
-    );
-    $(".nightmode").css("color", "black");
-  } else if (localStorage.getItem(darkMode) === false) {
-    $("h1").css("color", "black").css("background-color", "peachpuff");
-    $(".bottom-links").css("background-color", "peachpuff");
-    $(".navlinks").css("color", "black");
-    $("html").css(
-      "background-image",
-      'url("https://i.imgur.com/Bz64jOS.jpeg")'
-    );
-    $(".nightmode").css("color", "black");
-    locatStorage.setItem("darkMode", false);
-  } else {
-    console.log("No mode selected");
-  }
+  $(".dark-mode").hide();
 
-  const lightModeDarkMode = () => {
-    if (localStorage.getItem(darkMode) === true) {
-      $("h1").css("color", "black").css("background-color", "peachpuff");
-      $(".bottom-links").css("background-color", "peachpuff");
-      $(".navlinks").css("color", "black");
-      $("html").css(
-        "background-image",
-        'url("https://i.imgur.com/Bz64jOS.jpeg")'
-      );
-      $(".nightmode").css("color", "black");
-      locatStorage.setItem("darkMode", false);
-    } else if (localStorage.getItem(darkMode) === false) {
-      $("h1").css("color", "white").css("background-color", "black");
-      $(".bottom-links").css("background-color", "black");
-      $(".navlinks").css("color", "white");
-      $("html").css(
-        "background-image",
-        'url("https://i.imgur.com/r6JPltq.jpg")'
-      );
-      $(".nightmode").css("color", "white");
-      locatStorage.setItem("darkMode", true);
-    } else {
-      $("h1").css("color", "black").css("background-color", "peachpuff");
-      $(".bottom-links").css("background-color", "peachpuff");
-      $(".navlinks").css("color", "black");
-      $("html").css(
-        "background-image",
-        'url("https://i.imgur.com/Bz64jOS.jpeg")'
-      );
-      $(".nightmode").css("color", "black");
-      locatStorage.setItem("darkMode", false);
-    }
+  const lightModeBt = () => {
+    $(".dark-mode").show();
+    $(".light-mode").hide();
+    $("h1").css("color", "black").css("background-color", "peachpuff");
+    $(".bottom-links").css("background-color", "peachpuff");
+    $(".navlinks").css("color", "black");
+    $(".testimonials")
+      .css("background-image", "none")
+      .css("background-color", "white");
+    $("html")
+      .css("background-image", 'url("https://i.imgur.com/EbsdWxT.png")')
+      .css("background-color", "white");
+    $(".nightmode").css("color", "black");
+    $("#contact-link").css("border-color", "black");
+    window.localStorage.setItem("darkLightMode", "light");
   };
 
-  $(".lightmode").on("click", lightModeDarkMode);
+  const darkModeBt = () => {
+    $(".dark-mode").hide();
+    $(".light-mode").show();
+    $("h1").css("color", "white").css("background-color", "black");
+    $(".bottom-links").css("background-color", "black");
+    $(".navlinks").css("color", "white");
+    $(".testimonials").css("background-color", "");
+    $(".testimonials").css(
+      "background-image",
+      "linear-gradient(hwb(0 0% 100% / 0), rgb(77, 84, 133))"
+    );
+    $("html")
+      .css("background-image", 'url("https://i.imgur.com/r6JPltq.jpg")')
+      .css("background-color", "black");
+    $(".nightmode").css("color", "white");
+    $("#contact-link").css("border-color", "white");
+    window.localStorage.setItem("darkLightMode", "dark");
+  };
+
+  if (window.localStorage.getItem("darkLightMode") === "light") {
+    lightModeBt();
+  } else {
+    console.log("It's dark mode.");
+  }
+
+  // SET HTML TO ONLY SHOW AFTER NIGHT MODE SETTING IS LOADED ON THE PAGE OTHERWISE IF DAY MODE IS SELECTED YOU SEE A FLASH OF THE ORIGINAL STYLING
+
+  $("html").show();
+
+  $(".light-mode").on("click", lightModeBt);
+  $(".dark-mode").on("click", darkModeBt);
 
   // HOME PAGE VARIABLES AND LOAD CONDITIONS
 
