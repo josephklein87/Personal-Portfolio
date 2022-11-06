@@ -74,7 +74,6 @@ $(() => {
   $(".hidden").hide().delay(400);
   $(".hidden").fadeIn("slow");
 
-  let testimonialVisible = false;
   $(".menu-modal").hide();
   $("#testimonials-container").css("display", "flex");
   $("#slide-div").hide();
@@ -90,6 +89,8 @@ $(() => {
   $(".bottom-menu").on("click", menuReveal);
 
   //SLIDE FUNCTION TO REVEAL TESTIMONIALS
+  let testimonialVisible = false;
+
   const testimonialsReveal = () => {
     if (testimonialVisible === false) {
       $("#expand-less1").hide();
@@ -107,6 +108,8 @@ $(() => {
   $("#testimonial-button").on("click", testimonialsReveal);
 
   //PROJECTS PAGE CODE
+
+  //CAROUSEL CODE
   let currentImageIndex = 0;
   let numOfImages = $(".carousel-images").children().length - 1;
 
