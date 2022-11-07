@@ -561,6 +561,10 @@ iframe {
     /* margin-top: 20px; */
   }
 
+  #he-man {
+    width: 160px;
+  }
+
   #my-story {
     width: 80%;
     font-size: medium;
